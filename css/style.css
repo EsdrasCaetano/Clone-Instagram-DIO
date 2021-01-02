@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+}
+
+.container {
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    margin: 10em auto 0;
+    max-width: 935px;
+    padding-bottom: 2em;
+    
+}
+.container .ig-bg-slide {
+    align-self: center;
+    background-image: url(../images/bg-hoem.png);
+    background-position: 0 0;
+    background-size: 454px 618px;
+    flex-basis: 454px;
+    height: 618px;
+    margin-left: -35px;
+    margin-right: -15px;
+}
+.container .slideDiv{
+    margin: 99px 0 0 151px;
+    position: relative;
+    height: 427px;
+    width: 240px;
+}
+.slideImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.visible {
+    opacity:1;
+}
+
+
+.container .ig-login {
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    max-width: 350px;
+    color: #dbdbdb;
+    margin-top: 12px;
+}
+
+.container .ig-login .signIn, .container .ig-login .singUp {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+.container .ig-login .signIn {
+    display: flex;
+    flex-direction: column;
+}
+.container .ig-login .signIn .logo-frase{
+    width: 175px;
+    margin: 22px auto 12px;
+}
+.container .ig-login .signIn img + div{
+    margin-top: 25px;
+    margin-bottom: .5em;
+}
+.container .ig-login .signIn .label-float{
+    display: flex;
+    position: relative;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fafafa;
+    color: #c2bebe;
+    flex-direction: row;
+    font-size: 14px;
+    width: 85%;
+  }
+.container .ig-login .signIn .label-float input{
+    background: #fafafa;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    min-width: 250px;
+    padding: 11px 10px;
+    font-size: 14px;
+    transition: all .1s linear;
+    appearance: none;
+    flex: 1;
+    box-sizing: border-box;
+
+}
+  
+.container .ig-login .signIn .label-float input:focus{
+    border: 1px solid #dbdbdb;;
+  
+}
+  
+.container .ig-login .signIn .label-float input::placeholder{
+    color:transparent;
+  }
+
+.container .ig-login .signIn .label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    box-sizing: content-box;
+    background: #fafafa;
+    padding: 0px;
+  }
+
+.container .ig-login .signIn .label-float input:focus + label,
+.container .ig-login .signIn .label-float input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    top: -5px;
+    left: 7px;
+    color: #dbdbdb;
+    background-color: transparent;
+    padding: 5px;
+  }
+
+
+.container .signIn button {
+    width: 85%;
+    background-color: #0095f6;
+    color: #fff;
+    border: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    padding: 10px 9px;
+    border-radius: 4px;
+    margin: 1.5em 0 2em 0;
+    outline: none;
+}
+
+.container .signIn .or {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .signIn .or .line {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #dbdbdb;
+    height: 1px;
+    position: relative;
+}
+
+.container .signIn .or .or-text {
+    margin: 0 1em;
+    color: #8e8e8e;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.container .signIn .login-FB {
+    display: flex;
+    justify-content: space-around;
+    color: #385185;
+    font-size: 14px;
+    margin: 1.5em;
+}
+.container .signIn .login-FB div {
+    width: 16px;
+    height: 16px;
+    margin-right: .7em;
+}
+.container .signIn .login-FB img{
+    width: 100%;
+}
+.container .signIn a {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: .8em;
+}
+
+.container .ig-login .singUp {
+    margin: 0;
+    padding: 1em;
+}
+.container .ig-login .singUp p {
+    color: #262626;
+    font-size: 14px;
+}
+.container .ig-login .singUp  a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.container .download{
+    
+}
+.container .download p {
+    color: #262626;
+    font-size: 15px;
+    margin: 1em 1.3em;
+}
+.container .download .down-btn{
+    
+}
+.container .download .down-btn img{
+    width: 135px;
+    height: 40px;
+}
+
+@media (max-width: 992px) {
+    body {
+        background-color: #fafafa
+    }
+    
+    .container {
+        margin: 2em auto 0;
+    }
+    .container .ig-bg-slide {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    * {
+        border: none;
+        background-color: #fafafa;
+    }
+    .container .ig-login .signIn, .container .ig-login .singUp {
+        background-color: #fafafa;
+        border: none;   
+    }
+}
